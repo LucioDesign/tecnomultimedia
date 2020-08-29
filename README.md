@@ -1,3 +1,6 @@
+El juego consiste en llegar al final (arriba de la pantalla) sin tocar ninguna de las burbujas que pasan en el medio, para esto tienes 3 vidas, por lo que, si pierdes una, tienes que volver a empezar desde el principio. Al acabarse las vidas pierdes automáticamente, pero puedes volver a intentar jugar nuevamente presionando la tecla "R".
+
+
 int cantH = 10;
 int tam;
 int [] posX = new int [cantH]; // Posiciones en X de cada ellipse
