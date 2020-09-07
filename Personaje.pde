@@ -5,19 +5,16 @@ void inicializarAutoPersonaje(){
 void dibujarAutoPersonaje(){
   fill(255,0,0);
   rect(posX, posY - tamY , tamX, tamY/1.3);
-  if(vidas <= 0){
+ 
+//textos al perder 
+ if(vidas <= 0){
        background(0);
      fill(255,200,0);
-
-
-//textos al perder
-
      textSize(30);
   textAlign (LEFT);
     text ("¡Perdiste!",height/8,width/1.2); 
     textSize(15);
     text("Presiona R para volver a empezar",height/18,width); 
-    fill(0);
   }
   
   }
