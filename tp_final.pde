@@ -1,16 +1,15 @@
 Controlador controlador;
 
 void setup(){
-  size(400,400);
+  size(800,600);
   controlador = new Controlador();
 }
 
 void draw(){
   background(200);
-  controlador.dibujar();
+ controlador.pantallas();
 }
 
-/*void mouseClicked(){
-  controlador.mouseClicked();
+void mouseClicked(){
+controlador.ClickBotones();
 }
-*/
