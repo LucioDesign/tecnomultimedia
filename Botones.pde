@@ -9,20 +9,18 @@ class Botones{
 int PorcentajeY(int valor){
     return round(map(valor,0,600,0,height));
 }
- void dibujar(PImage colorBoton, String textBot, int TextSize, int BotPosX, int BotPosY, int posXtext, int posYtext){
+
+ //------------------------- BOTÓN GENÉRICO --------------------------------//
+
+void boton(PImage colorBoton, String textBot, int TextSize, int BotPosX, int BotPosY, int posXtext, int posYtext){
    image(colorBoton,PorcentajeX(BotPosX),PorcentajeY(BotPosY));
    colorBoton.resize(0,62);
    fill(255);
    textSize(TextSize);
    text(textBot, PorcentajeX(posXtext),PorcentajeY(posYtext)); 
+}  
+   
 }
-
- }
- 
- 
- 
- 
- 
  
  
  
