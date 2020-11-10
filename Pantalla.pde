@@ -1,8 +1,5 @@
-
 class Pantalla{
   
-
-
   PImage [] imag = new PImage [13];
 Textos textos = new Textos();
 
@@ -63,7 +60,5 @@ void pantallaHistoria(int pantalla) {
   textSize(40);
 text(textos.TextoPantalla(pantalla),PorcentajeX(20), PorcentajeY(60));
 image (imag[pantalla],PorcentajeX(-50),PorcentajeY(275));
-
-
 }
 }
