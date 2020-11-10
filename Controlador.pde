@@ -1,6 +1,7 @@
 class Controlador{
 Pantalla pantallas;
 Botones boton;
+Juego juego;
 
 //-----velocidad creditos-----//
 int p2_Y_inicial = 500;
@@ -20,7 +21,8 @@ PImage boton_amarillo;
    pantalla = 0;
    pantallas = new Pantalla();
    boton = new Botones();
-   
+    juego = new Juego();
+    
      letras = loadFont ("FrenchScriptMT-48.vlw");
   fondo_papel = loadImage ("pergamino_fondo.png") ;
   boton_verde = loadImage ("verde.png") ;
@@ -69,10 +71,8 @@ int PorcentajeY(int valor){
     boton.boton(boton_azul,"Continuar",25,610,455,640,490);
     
   } else if (pantalla == 5) {
-    
-    pantallas.pantallasGenericas(pantalla);   
-    boton.boton(boton_amarillo,"Jugar con Tom",25,550,390,575,425);
-    boton.boton(boton_verde,"Jugar con Eduardo",25,556,455,568,490);
+
+    juego.Dibujar();
     
   } else if (pantalla == 7) {
     
@@ -92,7 +92,7 @@ int PorcentajeY(int valor){
     boton.boton(boton_rojo,"Fin",25,610,455,663,490);
     
   }
-  // println(pantalla);
+   println(pantalla);
 }
 
 
@@ -131,7 +131,7 @@ void ClickBotones(){
    }else if (pantalla == 4) {
    boton(610,745,455,515,5);
    }else if (pantalla == 5) {
-   botones (515,700,390,450,556,706,455,515,8,6);
+   juego.clickBot();
    }else if (pantalla == 6) {
    boton(610,745,455,515,7);
    } else if (pantalla == 7) {
@@ -165,4 +165,22 @@ void botones (int c1,int c2,int c3,int c4,int c5,int c6,int c7,int c8,int b2,int
      pantalla = b3;
     }
  }
+ void Teclas(){    
+    
+ juego.Reincio();
+ if (pantalla == 5) {
+      if (key == ENTER) {
+       pantalla = 8;
+       juego.inicializarJuego();
+       juego.generarPaqueteRandom();
+        }
+    }
+ if (pantalla == 5) {
+      if (key == BACKSPACE) {
+       pantalla = 6;
+       juego.inicializarJuego();
+       juego.generarPaqueteRandom();
+        }
+    }
  }
+}
