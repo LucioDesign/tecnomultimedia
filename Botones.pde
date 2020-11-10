@@ -21,6 +21,3 @@ void boton(PImage colorBoton, String textBot, int TextSize, int BotPosX, int Bot
 }  
    
 }
- 
- 
- 
