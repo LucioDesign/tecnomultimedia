@@ -1,5 +1,5 @@
 class Resultados{
-  Textos textos6,textos7,textos8;
+  Textos textos6;
   String textoFinal;
   Resultados(){
       textos6 = new Textos();
