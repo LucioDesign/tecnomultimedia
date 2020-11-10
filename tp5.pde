@@ -1,16 +1,19 @@
 Juego juego;
 
-void setup(){
- size(800,600);
-juego = new Juego();
+void setup() {
+  size(800, 600);
+  juego = new Juego();
 }
 
-void draw(){
+void draw() {
   background(200);
-  juego.dibujar();
-
+  juego.Dibujar();
 }
 
-void mouseClicked(){
-  juego.mouseClicked();
+void mouseClicked() {
+  juego.clickBot();
+}
+
+void keyPressed() {
+  juego.Reincio();
 }
