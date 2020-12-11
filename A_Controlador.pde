@@ -109,7 +109,7 @@ Juego juego;
     pantallas[pantalla] = new Pantalla(proporcion, imag[pantalla], textos.TextoPantalla(pantalla), boton1, null, 20, 60, 525, 40, 40, null, null);
 
     //Al terminar de crear las pantallas, indico la actual.
-    pantallaActual = pantallas[5];
+    pantallaActual = pantallas[0];
   }
 
   void dibujar() {
