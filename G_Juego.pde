@@ -34,11 +34,11 @@ class Juego {
 
    void puntaje() {
     if (videojuego.controlarGanarOPerder() == 2) {
-      estadoJ = controlarGanarOPerder();
+      estadoJ = videojuego.controlarGanarOPerder();
     } else if (videojuego.controlarGanarOPerder() == 3) {
-      estadoJ = controlarGanarOPerder();
+      estadoJ = videojuego.controlarGanarOPerder();
     } else if (videojuego.controlarGanarOPerder() == 4) {
-      estadoJ = controlarGanarOPerder();
+      estadoJ = videojuego.controlarGanarOPerder();
     } else {
       estadoJ = 0; }
   }
