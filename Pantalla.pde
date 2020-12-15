@@ -1,6 +1,5 @@
 class Pantalla{
   Proporcion proporcion;
-  Boton[] botones;
   PImage fondo_papel;
   PImage imagen; 
   String textoPantalla; 
